@@ -1,4 +1,4 @@
-const taskone = new Promise((resolve, reject)=> {
+const taskone = new Promise((resolve, reject) => {
     let completedPromise = true;
     if (completedPromise)
     {
@@ -98,23 +98,24 @@ const tasksix = new Promise((resolve, reject)=> {
             // });
 
             async function callAllTask() {
-                const t1 = await taskone();
+                const t1 = await taskone;
                 console.log(t1);
                 
-                const t2 = await tasktwo();
+                const t2 = await tasktwo;
                 console.log(t2);
 
-                const t3 = await taskthree();
+                const t3 = await taskthree;
                 console.log(t3);
 
-                const t4 = await taskfour();
+                const t4 = await taskfour;
                 console.log(t4);
 
-                const t5 = await taskfive();
+                const t5 = await taskfive;
                 console.log(t5);
 
-                const t6 = await tasksix();
+                const t6 = await tasksix;
                 console.log(t6);
+
             }
 
             callAllTask();
