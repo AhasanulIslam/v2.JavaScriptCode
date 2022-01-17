@@ -25,3 +25,10 @@ console.log(c);
 
 let d = div(5, 7);
 console.log(d);
+
+let display = () => console.log("V2 tech");
+
+display();
+
+const add1 = (a, b) => a + b;
+ console.log(add1(10, 12));
